@@ -6,9 +6,14 @@ public class ReverseString {
         System.out.println("Enter a String");
         String str = sc.nextLine();
 
-        for (int i = str.length() - 1; i >= 0 ; i--) {
-            System.out.print(str.charAt(i));
+        System.out.println("reverse(str) = " + reverse(str));
 
+    }
+    static String reverse(String str){
+        StringBuilder s = new StringBuilder();
+        for (int i = str.length() - 1; i >= 0 ; i--) {
+            s.append(str.charAt(i));
         }
+        return s.toString();
     }
 }
