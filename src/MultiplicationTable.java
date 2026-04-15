@@ -12,7 +12,10 @@ public class MultiplicationTable {
      static void multiplicationTable(int num) {
 
          for (int i = 0; i <= 10; i++) {
-             System.out.println(num + " * " + i + " = " + num*i);
+             if (i % 3 != 0){
+                 System.out.println(num + " * " + i + " = " + num*i);
+             }
+
 
          }
     }
